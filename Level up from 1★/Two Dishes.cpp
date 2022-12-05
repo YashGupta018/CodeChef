@@ -1,20 +1,16 @@
 #include <iostream>
 using namespace std;
-int splitTheSum(int N,int K);
+
 int main() {
-     int t;
-    cin>>t;
-    while(t--) {
-        int N,K;
-        cin>>N>>K;
-        int ans= splitTheSum(N,K);
-        cout<<ans<<"\n";
-    }
-}
-int splitTheSum(int N,int K) {
-        if(N>=K){
-            return K;
+	int t;
+	cin>>t;
+	while(t--) {
+        int n,a,b,c;
+        cin>>n>>a>>b>>c;
+        if((a+c)>=n&&b>=n)
+        cout<<"YES"<<endl;
+        else
+        cout<<"NO"<<endl;
         }
-        int x=K-N;
-        return N-x;
+	return 0;
 }
